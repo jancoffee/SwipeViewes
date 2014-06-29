@@ -5,14 +5,47 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MyActivity$PlaceholderFragment">
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/simpsons_garage"
+        android:id="@+id/image"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomLeftButton"
+        android:text="bottomLeftButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ic_launcher"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topRightButton"
+        android:text="topRightButton"
+        android:layout_above="@+id/section_label"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_launcher"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLeftButton"
+        android:text="topLeftButton"
+        android:layout_above="@+id/bottomLeftButton"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ic_launcher"/>
 
     <TextView
         android:id="@+id/section_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40dp"
-        android:text="\?\?"/>
+        android:text="nr"
+        android:layout_alignTop="@+id/bottomLeftButton"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_launcher"/>
 
 </RelativeLayout>
